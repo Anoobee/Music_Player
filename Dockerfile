@@ -9,7 +9,7 @@ COPY package-lock.json ./
 COPY ./ ./
 # Install bash
 RUN apk add --no-cache bash
-
+RUN apk update && apk add --no-cache curl sudo
 RUN npm i --legacy-peer-deps
 
 

@@ -13,6 +13,5 @@
     }
   },
   "postCreateCommand": "npm i",
-  "appPort": [5173],
-  "remoteUser": "vscode"
+  "appPort": [5173]
 }

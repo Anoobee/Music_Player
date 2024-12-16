@@ -10,4 +10,6 @@ COPY ./ ./
 
 RUN npm i --legacy-peer-deps
 
+Run npm install @fortawesome/fontawesome-svg-core
+
 CMD ["npm", "run", "dev"]

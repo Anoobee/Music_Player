@@ -1,7 +1,9 @@
 {
   "name": "Node.js Dev Container",
-  "dockerFile": "../Dockerfile",
-  "context": "..",
+  "build": {
+    "dockerfile": "../Dockerfile",
+    "context": ".."
+  },
   "runArgs": ["-v", "/usr/src/app/node_modules"],
   "customizations": {
     "vscode": {

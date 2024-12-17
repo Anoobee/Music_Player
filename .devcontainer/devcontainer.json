@@ -1,14 +1,25 @@
 {
-  "name": "Node.js Dev Environment",
+  "name": "Music_Player",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:latest",
+  "forwardPorts": [5173],
   "customizations": {
     "vscode": {
       "settings": {
-        "terminal.integrated.shell.linux": "/bin/bash",
-        "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe"
+        "eslint.autoFixOnSave": true,
+        "eslint.validate": [
+          "javascript",
+          "typescript",
+          "javascriptreact",
+          "typescriptreact"
+        ],
+        "editor.formatOnSave": true
       },
-      "extensions": ["dbaeumer.vscode-eslint", "esbenp.prettier-vscode"]
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "ms-vscode.vscode-typescript-tslint-plugin"
+      ]
     }
   },
-  "postCreateCommand": "npm install",
-  "appPort": [5173]
+  "postCreateCommand": "npm install"
 }

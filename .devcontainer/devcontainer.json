@@ -1,10 +1,6 @@
 {
-  "name": "Node.js Dev Container",
-  "build": {
-    "dockerfile": "../Dockerfile",
-    "context": ".."
-  },
-  "runArgs": ["-v", "/usr/src/app/node_modules"],
+  "name": "Node.js Development Environment",
+  "forwardPorts": [5173],
   "customizations": {
     "vscode": {
       "settings": {
@@ -14,6 +10,6 @@
       "extensions": ["dbaeumer.vscode-eslint", "esbenp.prettier-vscode"]
     }
   },
-  "postCreateCommand": "npm i",
-  "appPort": [5173]
+  "postCreateCommand": "npm install",
+  "remoteUser": "vscode"
 }

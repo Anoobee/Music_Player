@@ -31,7 +31,7 @@ Welcome to the **Music Player** repository! This project is lightweight, and res
 - **🎶 Play & Pause**: Play, pause, and control your favorite songs seamlessly.
 - **⏩ Previous & Next**: Navigate through your playlist easily.
 - **🔄 Loop & Shuffle**: Repeat a song or enjoy your music in random order.
-- **🎨 User-Friendly UI**: Clean and minimalistic design for better user experience.
+- **🎨 User-Friendly UI**: Clean and minimalistic design for better user experience
 
 ---
 
